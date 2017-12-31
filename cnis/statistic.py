@@ -44,17 +44,17 @@ def calMADe(array):
 
 
 def testVar(array):
-    for ele in a:
+    for ele in array:
         yield ((ele-5)**2)
 
-a = np.array([0,10,8,3,4,5,6,7,2,9,1])
-print(a)
-print("average:",calAverage(a))
-print("median:",calMedian(a))
-print("variance:",calVariance(a))
-print("standardVar:",calStandardVar(a))
-print("quantile_3:",calQuantile3(a))
-print("quantile_1:",calQuantile1(a))
-print("IQR:",calIQR(a))
-print("nIQR:",calNIQR(a))
-print("MADe",calMADe(a))
+# a = np.array([0,10,8,3,4,5,6,7,2,9,1])
+# print(a)
+# print("average:",calAverage(a))
+# print("median:",calMedian(a))
+# print("variance:",calVariance(a))
+# print("standardVar:",calStandardVar(a))
+# print("quantile_3:",calQuantile3(a))
+# print("quantile_1:",calQuantile1(a))
+# print("IQR:",calIQR(a))
+# print("nIQR:",calNIQR(a))
+# print("MADe",calMADe(a))
