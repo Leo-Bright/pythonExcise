@@ -17,7 +17,7 @@ def calStandardVar(array):
     return standardVar
 
 def calQuantile3(array):
-    quantile3 = np.percentile(array,75, interpolation='nearest')
+    quantile3 = np.percentile(array, 75, interpolation='nearest')
     return quantile3
 
 def calQuantile1(array):
@@ -47,7 +47,7 @@ def testVar(array):
     for ele in array:
         yield ((ele-5)**2)
 
-# a = np.array([0,10,8,3,4,5,6,7,2,9,1])
+# a = np.array([1.1,1.2,2.1,3.1,3.6,5.6,6.1,7.4,8.4,9,1.8,6.6])
 # print(a)
 # print("average:",calAverage(a))
 # print("median:",calMedian(a))

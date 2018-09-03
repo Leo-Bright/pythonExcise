@@ -65,10 +65,10 @@ def methodQn(array):
     return Qn
 
 
-a = np.array([1,10,8,3,4,5,6,7,2,9,1])
+a = np.array([1.1,1.2,2.1,3.1,3.6,5.6,6.1,7.4,8.4,9,1.8,6.6])
 b = np.array([1,10,8,3,4,5,6,7,2,9,1])
 mat = np.array([[1,10,8,3,4,5,6,7,2,9,1],[1,5,8,3,4,7,6,7,2,9,4],[3,10,9,3,4,1,6,7,4,9,11]])
 
-# print(st.calVariance(a))
+print(methodA(a))
 # print(methodS(mat))
 print(methodQn(a))
