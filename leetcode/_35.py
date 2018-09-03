@@ -5,13 +5,22 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        for idx in range(len(nums)):
-            if nums[idx] >= target:
-                return idx
-            elif idx == len(nums)-1:
-                return len(nums)
+
+        nums_len = len(nums)
+        start = 0
+        end = nums_len - 1
+        if start == end:
+            return start if target <= nums[start] else start+1
+        while start < end:
+            mid = (start + end) // 2
+            if target < nums[mid]:
+                end = mid - 1
+            elif target > nums[mid]:
+                start = mid + 1
             else:
-                continue
+                return mid
+        return start if target <= nums[start] else start+1
+
 
 
 test = Solution()
